@@ -1,0 +1,170 @@
+{
+	"id": "f3e400c3-f73d-4c66-8094-2f46eaeb61a0",
+	"name": "api-jenkins",
+	"timestamp": "2024-01-15T05:24:50.072Z",
+	"collection_id": "23526177-bbc1907a-5e7a-4230-b9d7-9dedc2809c66",
+	"folder_id": 0,
+	"environment_id": "23526177-0102fd82-ae82-4cf3-badb-c831acbbbea9",
+	"totalPass": 8,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2024-01-15T05:24:48.606Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "6b085d29-d395-4a2f-8d36-cda525877599",
+			"name": "/sign-in - [T]",
+			"url": "http://ask-qa.portnov.com/api/v1/sign-in",
+			"time": 630,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 1000ms": true,
+				"Body matches user role - TEACHER": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 1000ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body matches user role - TEACHER": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				630
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 1000ms": true,
+					"Body matches user role - TEACHER": true
+				}
+			]
+		},
+		{
+			"id": "e133c4c0-f65c-48b9-a0ba-ed7f4112ad23",
+			"name": "quiz - [T]Create Quiz",
+			"url": "http://ask-qa.portnov.com/api/v1/quiz",
+			"time": 185,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 1000ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 1000ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				185
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 1000ms": true
+				}
+			]
+		},
+		{
+			"id": "1f493cdb-3d13-4d18-a0b3-28f3a64be6ed",
+			"name": "/quiz - [T] Update Quiz",
+			"url": "http://ask-qa.portnov.com/api/v1/quiz",
+			"time": 95,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				95
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "8b67622c-94c3-4ff1-b063-a59913ea83c4",
+			"name": "/quiz/:id - [T] ",
+			"url": "http://ask-qa.portnov.com/api/v1/quiz/19611",
+			"time": 88,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Message contains - Quiz was deleted": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Message contains - Quiz was deleted": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				88
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Message contains - Quiz was deleted": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 998,
+	"collection": {
+		"requests": [
+			{
+				"id": "6b085d29-d395-4a2f-8d36-cda525877599",
+				"method": "POST"
+			},
+			{
+				"id": "e133c4c0-f65c-48b9-a0ba-ed7f4112ad23",
+				"method": "POST"
+			},
+			{
+				"id": "1f493cdb-3d13-4d18-a0b3-28f3a64be6ed",
+				"method": "PUT"
+			},
+			{
+				"id": "8b67622c-94c3-4ff1-b063-a59913ea83c4",
+				"method": "DELETE"
+			}
+		]
+	}
+}
